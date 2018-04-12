@@ -1,0 +1,167 @@
+@font-face {
+	font-family: 'HelveticaNeueLight';
+	src: url('ProximaNovaCond-LightIt.eot');
+	src: local('HelveticaNeueLight'), local('HelveticaNeueLight'),
+		url('HelveticaNeueLight.eot?#iefix') format('embedded-opentype'),
+		url('HelveticaNeueLight.woff') format('woff'),
+		url('HelveticaNeueLight.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+body{
+	width: 1020px;
+	margin: auto;
+	line-height: 2;	
+}
+
+.box1, .box6{
+	font-size: 15px;
+	color: #5f6582;
+}
+.box1{
+	margin: 0 -10px;
+}
+.box1 .item{
+	margin: 10px 10px;
+	box-shadow:  0 15px 30px #0000002b;
+}
+.box1 .border{
+	margin: 40px 0;
+	border-left: 3px solid #394791;
+}
+.box1 .text{
+	padding: 0 50px;
+}
+.box2{
+	text-align: center;
+}
+.box2, .box4, .box5{
+	font-size: 21px;
+	color: #000;
+	margin-top: 40px;
+	font-family: "HelveticaNeueLight";
+}
+
+.box3{
+	background: url(bg1.png) center no-repeat;
+	background-size: contain;
+	height: 600px;
+	margin-top: 40px;
+}
+.box3 .item{
+	background: #fff url(bg-item-prorod.png) no-repeat right bottom;
+	border-radius: 2px;
+	border-top: 3px solid #394791;
+	box-shadow:  0 5px 5px #00000014;
+}
+.box3 .trumb{
+	background-color: #fff;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 350px;
+	border-bottom: 1px solid #ebecf4;
+	transition: 0.3s;
+	position: relative;
+}
+.box3 .trumb .sticker {
+    background-image: url(Sticker.png);
+    width: 138px; height: 134px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 4px;
+}
+
+.box3 .trumb:hover{ opacity: 0.5; }
+.box3 .un-trumb{
+	padding: 20px 30px;
+}
+.box3 .un-trumb .title{
+
+}
+.box3 .un-title{
+	margin-top: 20px;
+	line-height: 1.5;
+}
+.box3 .un-title .vnalichii{
+	color: #26be00;.
+	font-size: 15px;
+}
+.box3 .un-title .price{
+	font-size: 26px;
+	color: #000;
+}
+.box3 .un-title a { color: #fff }
+.box3 .un-title .btn-buy-1{
+	background: #394791;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 130px;
+	font-size: 15px;
+	text-align: center;
+	padding: 16px 0;
+	transition: 0.3s;
+}
+.box3 .un-title .btn-buy-1:hover{ opacity: 0.5; }
+
+
+.box4 .text, .box5 .text{
+	padding: 40px 0;
+}
+
+.box6{
+	margin: 40px 0;
+}
+.box6 .icon{
+	width: 85px; height: 85px;
+	background-color: #fff;
+	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow:  0 15px 30px #0000002b;
+	border-radius: 50%;
+}
+.box6 .text{
+	padding: 30px 50px;
+}
+
+.box7{
+	background: #376db9 url(bg2.png) center no-repeat;
+	padding: 60px 0;
+}
+.box7 .text{
+	font-family: "HelveticaNeueLight";
+	font-size: 21px;
+	text-align: center;
+	color: #fff;
+	width: 600px;
+	margin: auto;
+}
+.box7 .un-title{
+	margin-top: 40px;
+}
+.box7 .item{
+	background: #fff;
+	border-radius: 2px;
+	padding: 0 10px;
+	box-shadow: inset 0px -3px 0 #1e43772e, 0 15px 30px #0000002b;
+	transition: 0.3s;
+}
+.box7 .item:hover{ opacity: 0.7; box-shadow: none; }
+.box7 .item .trumb{
+	float: left;
+}
+.box7 .item .info{
+	margin-left: 20px;
+	float: left;
+	line-height: 1.5;
+	padding-top: 10px;
+}
+.box7 .item .info .title{
+	font-size: 18px;
+	font-family: "HelveticaNeueLight";
+}
+.box7 .item .info .go-link{
+	color: #000;
+	text-decoration: underline;
+}
