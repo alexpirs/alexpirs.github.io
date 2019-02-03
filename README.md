@@ -1,2 +1,0 @@
-# alexpirs.github.io
-Hosty
