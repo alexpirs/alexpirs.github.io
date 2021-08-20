@@ -31,7 +31,6 @@ readTextFile("https://api.telegra.ph/getPageList?access_token=1bb2f6c76c482fd60d
 	for (var i in data.result.pages) {
 		list += '<h2><a href=' + data.result.pages[i].url + ' target=blank>' + data.result.pages[i].title + '</a></h2>';
 		list += '' + data.result.pages[i].description + ' <hr>';
-		alert(i);
 	}
 
 	document.getElementById('div').innerHTML += '<p>' + list + '</p>';
