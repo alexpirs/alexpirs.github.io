@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h2><a href=telegra.ph>+ Создать статью</a></h2>
+
+
+<div id="div"></div>
+
+<script>
+function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
+}
+
+//usage:
+
+readTextFile("https://api.telegra.ph/getPageList?access_token=1bb2f6c76c482fd60dedfe5aab0117e7410d64ae671b65660ac185c4c0a4", function(text){
+    var data = JSON.parse(text);
+	var list;
+	for (var i in data.result.pages) {
+		list += '<h2><a href=' + data.result.pages[i].url + ' target=blank>' + data.result.pages[i].title + '</a></h2>';
+		list += '' + data.result.pages[i].description + ' <hr>';
+		alert(i);
+	}
+
+	document.getElementById('div').innerHTML += '<p>' + list + '</p>';
+});
+	
+</script>
+
+
+
+</body>
+</html>
