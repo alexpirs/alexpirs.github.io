@@ -30,7 +30,7 @@ function get_cookie(Name) {
  
 function setcolor(what){
     document.body.style.backgroundColor=what
-    document.cookie="bgcolor="+what
+    document.cookie="bgcolor="+what+";expires=Tue, 19 Jan 2038 03:14:07 GMT"
 }
  
 if (get_cookie("bgcolor")!="")
