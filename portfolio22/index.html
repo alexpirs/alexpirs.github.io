@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://photoswipe.com/v5/photoswipe/photoswipe.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	
+
+	
+	<style type="text/css">
+		body{ font-size: 24px; }
+		.container{ max-width: 930px; margin: auto; }
+		img.links{ width: 32px; }
+		.button{ 
+			background: #00A3FF; 
+			margin: 50px 0px;
+			padding: 22px 0;
+			color: #fff;
+			width: 100%;
+			text-align: center;
+		}
+		.cv{
+			margin: 50px 0px;
+			text-align: center;
+			background: #2A1B6C;
+			padding: 40px 0;
+		}
+		.contact{
+			margin: 50px 0px;
+			background: #f2f2f2;
+			padding: 40px;
+			font-size: 32px;
+		}
+		.contact .mail{
+			margin: 0 0 40px;
+			text-align: center;
+		}
+	</style>
+
+</head>
+<body>
+
+
+
+
+
+<div class="container-fluid">
+<div class="row">
+	<div class="name col-md-4">Alexandr Pirus <br> 4+ years · designer from Odessa</div>
+	<div class="img col-md-4"><img src="photo.png" width="512px"></div>
+	<div class="links col-md-4 text-right">
+		<a>Portfolio.pdf</a> <a>СV.pdf</a>
+		<div>
+			<img src="behance.svg">
+			<img src="dribbble.svg">
+			<img src="facebook.svg">
+			<img src="telegram.svg">
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+<script type="module">
+// Include Lightbox 
+import PhotoSwipeLightbox from 'https://photoswipe.com/v5/photoswipe/photoswipe-lightbox.esm.js';
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#gallery--zoom-transition',
+  children: 'a',
+  showHideAnimationType: 'zoom',
+  pswpModule: 'https://photoswipe.com//v5/photoswipe/photoswipe.esm.js'
+});
+lightbox.init();
+</script>
+
+<div class="pswp-gallery" id="gallery--zoom-transition">
+<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg" 
+    data-pswp-width="1875" 
+    data-pswp-height="2500" 
+    target="_blank">
+    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg" alt="" />
+  </a>
+<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" 
+    data-pswp-width="1669" 
+    data-pswp-height="2500" 
+    target="_blank">
+    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="" />
+  </a>
+<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" 
+    data-pswp-width="2500" 
+    data-pswp-height="1666" 
+    target="_blank">
+    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
+  </a>
+</div>
+
+
+
+
+
+<div class="container">
+	<div class="button">Cкачать Portfolio.pdf</div>
+</div>
+
+
+
+<div class="container">
+	<div class="cv">
+		<img src="cv.png" alt="Alt" width="595px">
+	</div>
+</div>
+
+<div class="container">
+	<div class="contact">
+		<div class="mail">pirus981@gmail.com</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 text-center"><img src="behance-color.svg"></div>
+				<div class="col-md-3 text-center"><img src="dribbble-color.svg"></div>
+				<div class="col-md-3 text-center"><img src="facebook-color.svg"></div>
+				<div class="col-md-3 text-center"><img src="telegram-color.svg"></div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js'/>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js'/>
+
+</body>
+</html>
