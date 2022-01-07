@@ -3,33 +3,35 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
-	<link rel="stylesheet" href="https://photoswipe.com/v5/photoswipe/photoswipe.css">
-	<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
+	<title>Александр Пирус дизайнер</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/default-skin/default-skin.css">
 	
 
-
 	<style type="text/css">
-		body{ font-size: 24px; }
-		.container{ max-width: 930px; margin: auto; }
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+		body{ 
+			font-family: Inter;
+			font-size: 24px; 
+			letter-spacing: -0.05em;
+			margin: 24px;
+		}
+		.container{ max-width: 930px; margin-top: 40px }
 		img.links{ width: 32px; }
 		.button{ 
 			background: #00A3FF; 
-			margin: 50px 0px;
 			padding: 22px 0;
 			color: #fff;
 			width: 100%;
 			text-align: center;
 		}
 		.cv{
-			margin: 50px 0px;
 			text-align: center;
 			background: #2A1B6C;
 			padding: 40px 0;
 		}
 		.contact{
-			margin: 50px 0px;
 			background: #f2f2f2;
 			padding: 40px;
 			font-size: 32px;
@@ -37,6 +39,14 @@
 		.contact .mail{
 			margin: 0 0 40px;
 			text-align: center;
+		}
+		a{ transition: 0.3s; }
+		.links a:hover{
+			opacity: 0.4;
+		}
+		.gallery figure img {
+			border-radius: 12px;
+			box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 		}
 	</style>
 
@@ -46,67 +56,54 @@
 
 
 
-
 <div class="container-fluid">
 <div class="row">
-	<div class="name col-md-4">Alexandr Pirus <br> 4+ years · designer from Odessa</div>
+	<div class="name col-md-4">Alexandr Pirus<div style="font-size: 20px;">4+ years · designer from Odessa</div></div>
 	<div class="img col-md-4"><img src="photo.png" width="512px"></div>
-	<div class="links col-md-4 text-right">
-		<a>Portfolio.pdf</a> <a>СV.pdf</a>
-		<div>
-			<img src="behance.svg">
-			<img src="dribbble.svg">
-			<img src="facebook.svg">
-			<img src="telegram.svg">
+	<div class="lin ks col-md-4 text-right">
+		<a href="https://cv.pdf">Portfolio.pdf</a>&nbsp;&nbsp;&nbsp;<a href="https://cv.pdf">СV.pdf</a>
+		<div class="links">
+			<a href="https://www.behance.net/apirus"><img src="behance.svg"></a>
+			<a href="https://dribbble.com/Pirus"><img src="dribbble.svg" style="padding-left: 12px;"></a>
+			<a href="https://www.facebook.com/profile.php?id=100007556643739"><img src="facebook.svg" style="padding-left: 12px;"></a>
+			<a href="https://telegram.me/antipirus"><img src="telegram.svg" style="padding-left: 12px;"></a>
 		</div>
 	</div>
 </div>
 </div>
 
 
-<script type="module">
-// Include Lightbox 
-import PhotoSwipeLightbox from 'https://alexpirs.github.io/portfolio22/photoswipe-lightbox.esm.js';
-const lightbox = new PhotoSwipeLightbox({
-  gallery: '#gallery--zoom-transition',
-  children: 'a',
-  showHideAnimationType: 'zoom',
-  pswpModule: 'https://alexpirs.github.io/portfolio22/photoswipe-lightbox.esm.js'
-});
-lightbox.init();
-</script>
+<div id="gallery" class="gallery container" itemscope itemtype="http://schema.org/ImageGallery">
 
+	<!-- Презентация Liebherr -->
+	<figure>
+		<a href="liebherr/01.jpg" data-caption="" data-width="1800" data-height="1200" itemprop="contentUrl">
+			<img src="liebherr/01.jpg" itemprop="thumbnail" alt="Image description" width="100%">
+		</a>
+	</figure>
+	<figure><a href="liebherr/02.jpg" data-caption="" data-width="1800" data-height="1200" itemprop="contentUrl"></a></figure>
+	<figure><a href="liebherr/03.jpg" data-caption="" data-width="1800" data-height="1200" itemprop="contentUrl"></a></figure>
+	<figure><a href="liebherr/04.jpg" data-caption="" data-width="1800" data-height="1200" itemprop="contentUrl"></a></figure>
+	<figure><a href="liebherr/05.jpg" data-caption="" data-width="1800" data-height="1200" itemprop="contentUrl"></a></figure>
 
-<div class="pswp-gallery" id="gallery--zoom-transition">
-<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg" 
-    data-pswp-width="1875" 
-    data-pswp-height="2500" 
-    target="_blank">
-    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg" alt="" />
-  </a>
-<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" 
-    data-pswp-width="1669" 
-    data-pswp-height="2500" 
-    target="_blank">
-    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="" />
-  </a>
-<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" 
-    data-pswp-width="2500" 
-    data-pswp-height="1666" 
-    target="_blank">
-    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
-  </a>
+	<br>
+
+	<!-- Презентация B2B catalog -->
+	<figure>
+		<a href="catalog/01.jpg" data-caption="" data-width="1800" data-height="1200" itemprop="contentUrl">
+			<img src="catalog/01.jpg" itemprop="thumbnail" alt="Image description" width="100%">
+		</a>
+	</figure>
+	<figure><a href="catalog/02.jpg" data-caption="" data-width="1800" data-height="1200" itemprop="contentUrl"></a></figure>
+	<figure><a href="catalog/03.jpg" data-caption="" data-width="1800" data-height="1200" itemprop="contentUrl"></a></figure>
+	<figure><a href="catalog/04.jpg" data-caption="" data-width="1800" data-height="1200" itemprop="contentUrl"></a></figure>
+	<figure><a href="catalog/05.jpg" data-caption="" data-width="1800" data-height="1200" itemprop="contentUrl"></a></figure>
+	<figure><a href="catalog/06.jpg" data-caption="" data-width="1800" data-height="1200" itemprop="contentUrl"></a></figure>
 </div>
 
 
-
-
-
-
-
-
-<div class="container">
-	<div class="button">Cкачать Portfolio.pdf</div>
+<div class="container text-center">
+	<a href="">Cкачать Portfolio.pdf</a>
 </div>
 
 
@@ -116,22 +113,116 @@ lightbox.init();
 	</div>
 </div>
 
+
 <div class="container">
 	<div class="contact">
 		<div class="mail">pirus981@gmail.com</div>
 		<div class="container">
-			<div class="row">
-				<div class="col-md-3 text-center"><img src="behance-color.svg"></div>
-				<div class="col-md-3 text-center"><img src="dribbble-color.svg"></div>
-				<div class="col-md-3 text-center"><img src="facebook-color.svg"></div>
-				<div class="col-md-3 text-center"><img src="telegram-color.svg"></div>
+			<div class="row links">
+				<div class="col-md-3 text-center"><a href="https://www.behance.net/apirus"><img src="behance-color.svg"></a></div>
+				<div class="col-md-3 text-center"><a href="https://dribbble.com/Pirus"><img src="dribbble-color.svg"></a></div>
+				<div class="col-md-3 text-center"><a href="https://www.facebook.com/profile.php?id=100007556643739"><img src="facebook-color.svg"></a></div>
+				<div class="col-md-3 text-center"><a href="https://telegram.me/antipirus"><img src="telegram-color.svg"></a></div>
 		</div>
 		</div>
 	</div>
 </div>
 
-<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js'/>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js'/>-->
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Import jQuery and PhotoSwipe Scripts -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe-ui-default.min.js"></script>
+
+<script>
+   'use strict';
+   /* global jQuery, PhotoSwipe, PhotoSwipeUI_Default, console */
+   (function($){
+     // Init empty gallery array
+     var container = [];
+     // Loop over gallery items and push it to the array
+     $('#gallery').find('figure').each(function(){
+       var $link = $(this).find('a'),
+           item = {
+             src: $link.attr('href'),
+             w: $link.data('width'),
+             h: $link.data('height'),
+             title: $link.data('caption')
+           };
+       container.push(item);
+     });
+     // Define click event on gallery item
+     $('figure').find('a').click(function(event){
+       // Prevent location change
+       event.preventDefault();
+       // Define object and gallery options
+       var $pswp = $('.pswp')[0],
+           options = {
+             index: $(this).parent('figure').index(),
+             bgOpacity: 0.85,
+             showHideOpacity: true
+           };
+       // Initialize PhotoSwipe
+       var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+       //gallery.init();
+       gallery.init('#gallery');
+     });
+   }(jQuery));
+
+</script> 
+
+
+
 
 </body>
 </html>
