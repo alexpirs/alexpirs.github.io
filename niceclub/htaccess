@@ -1,0 +1,30 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page27207291.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^join-private-group-1$ page27365973.html [NC]
+RewriteRule ^join-private-group-1/$ page27365973.html [NC]
+
+RewriteRule ^join-private-group-2$ page27373889.html [NC]
+RewriteRule ^join-private-group-2/$ page27373889.html [NC]
+
+RewriteRule ^join-private-group-3$ page27373908.html [NC]
+RewriteRule ^join-private-group-3/$ page27373908.html [NC]
+
+RewriteRule ^checking-available-spots$ page27366609.html [NC]
+RewriteRule ^checking-available-spots/$ page27366609.html [NC]
+
+RewriteRule ^send-message-id5qr6h7t73566$ page27373514.html [NC]
+RewriteRule ^send-message-id5qr6h7t73566/$ page27373514.html [NC]
+
+RewriteRule ^send-gift-id7fg1j9t90234$ page27374189.html [NC]
+RewriteRule ^send-gift-id7fg1j9t90234/$ page27374189.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3939-3330-4638-b732-333839366361/Favicon.ico [R=302,L]
+
